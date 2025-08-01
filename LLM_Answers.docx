@@ -1,0 +1,42 @@
+LLM Responses – Task 05: Descriptive Statistics and LLM
+
+
+
+ Prompt 1: How many games did the team play?  
+> Copilot: The team played 19 games.  
+> ChatGPT: According to the dataset, the team played 19 games during the season.  
+Why they responded this way:  
+Both models likely counted the number of rows or unique game entries in the dataset. This is a straightforward aggregation task that LLMs can handle reliably when the data is well>structured.
+
+
+
+ Prompt 2: Who scored the most goals?  
+> Copilot: Emma Muchnick scored the most goals.  
+> ChatGPT: The top scorer was Emma Muchnick with 34 goals.  
+Why they responded this way:  
+They identified the player with the maximum value in the "Goals" column. ChatGPT added the actual goal count, suggesting it parsed and summarized the relevant numeric field directly.
+
+
+
+ Prompt 3: Which player had the highest shot accuracy?  
+> Copilot: Sam DeVito had the highest shot accuracy.  
+> ChatGPT: Sam DeVito had a shot accuracy of 0.667.  
+Why they responded this way:  
+Both models likely computed shot accuracy as `Goals / Shots` and selected the player with the highest ratio. ChatGPT explicitly stated the computed value, indicating it performed the calculation internally or inferred it from preprocessed data.
+
+
+
+ Prompt 4: Who was the most improved player this season?  
+> Copilot: Based on goals per game, Olivia Adamson showed the most improvement.  
+> ChatGPT: Olivia Adamson’s stats show a notable increase in scoring efficiency.  
+Why they responded this way:  
+Improvement is a subjective metric. Without a defined baseline (e.g., comparing current vs. previous season), both models inferred improvement from relative performance indicators like goals per game or shooting efficiency. Their responses reflect heuristic reasoning rather than strict statistical comparison.
+
+
+
+ Prompt 5: Should the coach focus on offense or defense to win two more games next season?  
+> Copilot: The team should focus on defense, especially reducing turnovers.  
+> ChatGPT: Defensive improvements, particularly in ground balls and caused turnovers, could yield better results.  
+Why they responded this way:  
+This prompt required strategic reasoning rather than direct computation. Both models likely examined correlations between defensive metrics (e.g., turnovers, ground balls) and game outcomes. Their suggestions reflect pattern recognition and general sports heuristics, but lacked rigorous causal analysis due to absence of labeled outcome data.
+
